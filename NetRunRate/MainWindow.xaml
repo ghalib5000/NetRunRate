@@ -1,0 +1,25 @@
+﻿<Window x:Class="NetRunRate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetRunRate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="runsScored" HorizontalAlignment="Left" Height="23" Margin="42,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="runsConceded" HorizontalAlignment="Left" Height="23" Margin="424,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="oversBowled" HorizontalAlignment="Left" Height="23" Margin="424,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="oversFaced" HorizontalAlignment="Left" Height="23" Margin="42,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="23" Margin="42,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Total Runs"/><Run Text=" scored"/><Run Text=" in all matches"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="424,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Total Runs"/><Run Text=" "/><Run Text="conceded"/><Run Text=" in all matches"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="424,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="total overs bowled in all matches"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="42,122,0,0" TextWrapping="Wrap" Text="total overs faced in all matches" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Net Run Rate"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="okbtn" Content="Check" HorizontalAlignment="Left" Margin="660,184,0,0" VerticalAlignment="Top" Width="88" Height="41" Click="Okbtn_Click"/>
+        <TextBox x:Name="dataFile" HorizontalAlignment="Left" Height="23" Margin="42,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="502"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,184,0,0" TextWrapping="Wrap" Text="Or Open The Data File" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
